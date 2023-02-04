@@ -34,8 +34,10 @@
   "resources": [
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":0,},
     {"id":{"name":"spr_walkingPlayer","path":"sprites/spr_walkingPlayer/spr_walkingPlayer.yy",},"order":0,},
+    {"id":{"name":"obj_Bomber","path":"objects/obj_Bomber/obj_Bomber.yy",},"order":0,},
     {"id":{"name":"rm_Win","path":"rooms/rm_Win/rm_Win.yy",},"order":0,},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":0,},
+    {"id":{"name":"spr_Bomber","path":"sprites/spr_Bomber/spr_Bomber.yy",},"order":0,},
     {"id":{"name":"spr_Bomb","path":"sprites/spr_Bomb/spr_Bomb.yy",},"order":0,},
     {"id":{"name":"rm_Death","path":"rooms/rm_Death/rm_Death.yy",},"order":0,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},

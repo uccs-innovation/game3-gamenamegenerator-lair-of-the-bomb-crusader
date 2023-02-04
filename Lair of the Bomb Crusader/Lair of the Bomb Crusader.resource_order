@@ -17,8 +17,10 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_walkingPlayer","order":2,"path":"sprites/spr_walkingPlayer/spr_walkingPlayer.yy",},
+    {"name":"obj_Bomber","order":5,"path":"objects/obj_Bomber/obj_Bomber.yy",},
     {"name":"rm_Win","order":2,"path":"rooms/rm_Win/rm_Win.yy",},
     {"name":"obj_Wall","order":1,"path":"objects/obj_Wall/obj_Wall.yy",},
+    {"name":"spr_Bomber","order":5,"path":"sprites/spr_Bomber/spr_Bomber.yy",},
     {"name":"spr_Bomb","order":3,"path":"sprites/spr_Bomb/spr_Bomb.yy",},
     {"name":"rm_Death","order":1,"path":"rooms/rm_Death/rm_Death.yy",},
     {"name":"snd_Jump","order":1,"path":"sounds/snd_Jump/snd_Jump.yy",},
