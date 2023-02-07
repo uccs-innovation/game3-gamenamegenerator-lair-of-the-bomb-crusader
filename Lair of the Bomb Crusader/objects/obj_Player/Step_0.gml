@@ -95,7 +95,7 @@ y += vsp;
 #endregion
 
 if(key_catch){
-	if(distance_to_object(obj_Bomb) < 10){
+	if(distance_to_object(obj_Bomb) < 50){
 	if(bombs < 1){
 		bombs++;
 	}
