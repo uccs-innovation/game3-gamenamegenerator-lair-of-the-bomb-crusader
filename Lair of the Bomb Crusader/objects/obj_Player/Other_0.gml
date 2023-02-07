@@ -1,9 +1,9 @@
-if y > 1080 || y < 0
+if y > 700 || y < -100
 {
 	room_goto(rm_Death);
 }
 
-if x > 1920
+if x > 10000
 {
 	room_goto(rm_Win);
 }

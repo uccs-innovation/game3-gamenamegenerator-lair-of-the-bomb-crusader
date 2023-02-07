@@ -15,7 +15,13 @@ else if x + 36 >= cam_x + cam_width
 {
 	move = 1;
 }
-
+if(delay > 0){
+	delay--;
+	movespeed = 0;
+}
+else{
+movespeed = -6;
+}
 hsp = move * movespeed;
 
 x += hsp;

@@ -4,3 +4,4 @@ movespeed = -6;
 move = -1;
 
 bombChance = 3;
+delay = 0;

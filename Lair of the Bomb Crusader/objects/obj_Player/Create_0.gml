@@ -13,3 +13,6 @@ HorCol = false;
 
 //Sound variables
 walking = 0;
+
+//How many bombs
+bombs = 0;
