@@ -7,24 +7,37 @@ var cam_width = camera_get_view_width(cam);
 
 #region Movement
 
-if x - 36 <= cam_x
+/*
+if x - 36 <= cam_x && !stunned
 {
 	move = -1;
 }
-else if x + 36 >= cam_x + cam_width
+else if x + 36 >= cam_x + cam_width && !stunned
 {
 	move = 1;
 }
-if(delay > 0){
-	delay--;
-	movespeed = 0;
-}
-else{
-movespeed = -6;
-}
 
-
-hsp = move * (movespeed - obj_Player.hsp);
+if x < cam_x
+{
+	x = cam_x
+}
+*/
+if !stunned
+{
+	var _dist = x - p.x;
+	if x < p.x + 200
+	{
+		hsp = 2 * -(_dist/100) + 4;
+	}
+	else if x > p.x + 250
+	{
+		hsp = -0.5 -(_dist/100) + 4;
+	}
+	else
+	{
+		hsp = p.hsp;
+	}
+}
 
 x += hsp;
 
@@ -32,11 +45,12 @@ x += hsp;
 
 #region Bombs
 
-var bomb = random(100);
-
-if bomb <= bombChance
+if stunned
 {
-	instance_create_layer(x, y, "Bombs", obj_Bomb);
+	alarm[0] ++;
+	hsp = 0;
 }
 
 #endregion
+
+//show_debug_message(_dist);
