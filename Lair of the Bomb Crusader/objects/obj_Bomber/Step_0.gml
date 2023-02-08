@@ -27,11 +27,11 @@ if !stunned
 	var _dist = x - p.x;
 	if x < p.x + 200
 	{
-		hsp = 2 * -(_dist/100) + 4;
+		hsp = 2 * -(_dist/100) + 6;
 	}
 	else if x > p.x + 250
 	{
-		hsp = -0.5 -(_dist/100) + 4;
+		hsp = -0.5 -(_dist/100) + 6;
 	}
 	else
 	{
