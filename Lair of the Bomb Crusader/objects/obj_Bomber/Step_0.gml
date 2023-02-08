@@ -22,7 +22,9 @@ if(delay > 0){
 else{
 movespeed = -6;
 }
-hsp = move * movespeed;
+
+
+hsp = move * (movespeed - obj_Player.hsp);
 
 x += hsp;
 

@@ -94,10 +94,14 @@ y += vsp;
 
 #endregion
 
-if(key_catch){
-	if(distance_to_object(obj_Bomb) < 50){
-	if(bombs < 1){
-		bombs++;
+if(key_catch)
+{
+	var _bomb = instance_nearest(x, y, obj_Bomb);
+	
+	if (distance_to_object(_bomb) < 50)
+	{
+		instance_create_layer(_bomb.x, _bomb.y, "bombs", obj_BombThrown);
+		
+		instance_destroy(_bomb);
 	}
-}
 }
