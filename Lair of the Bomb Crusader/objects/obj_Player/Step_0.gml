@@ -25,6 +25,11 @@ if hsp = 0 || !VertCol
 	sprite_index = spr_Player;
 }
 
+if vsp != 0
+{
+	//sprite_index = spr_jumpingPlayer;
+}
+
 if walking = 1
 {
 	audio_play_sound(snd_Walk, 1, 1);
@@ -94,14 +99,19 @@ y += vsp;
 
 #endregion
 
-if(key_catch)
+if(key_catch && bombs = 0)
 {
 	var _bomb = instance_nearest(x, y, obj_Bomb);
 	
 	if (distance_to_object(_bomb) < 50)
 	{
-		instance_create_layer(_bomb.x, _bomb.y, "bombs", obj_BombThrown);
+		bombs ++;
 		
 		instance_destroy(_bomb);
 	}
+}
+
+if bombs > 0
+{
+	sprite_index = spr_grabbingPlayer;
 }
