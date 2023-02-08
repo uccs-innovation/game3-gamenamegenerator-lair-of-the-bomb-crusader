@@ -1,7 +1,8 @@
 hsp = 0;
-movespeed = 6;
+//movespeed = -6;
 
-move = -1;
+p = obj_Player;
 
-bombChance = 3;
-delay = 0;
+bombChance = random_range(45, 120);
+stunned = false;
+alarm[0] = bombChance;
