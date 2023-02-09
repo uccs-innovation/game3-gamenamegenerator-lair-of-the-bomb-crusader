@@ -1,4 +1,4 @@
-if y > 700 || y < -100
+if y > 700 || x < 0
 {
 	room_goto(rm_Death);
 }
