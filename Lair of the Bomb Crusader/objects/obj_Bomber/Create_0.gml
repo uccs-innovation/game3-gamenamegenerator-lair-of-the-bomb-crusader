@@ -3,6 +3,6 @@ hsp = 0;
 
 p = obj_Player;
 
-bombChance = random_range(45, 120);
+bombChance = random_range(15, 60);
 stunned = false;
 alarm[0] = bombChance;
